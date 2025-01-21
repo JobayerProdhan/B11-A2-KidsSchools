@@ -300,6 +300,10 @@ ul{
         height: 430px;
     }
 
+    .curriculum-title{
+        font-size: 1.7rem;
+    }
+
     .cards{
        flex-direction: column;
         
