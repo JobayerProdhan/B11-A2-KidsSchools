@@ -399,42 +399,38 @@ ul{
 
 /* footer section styles */
 footer{
+    display: flex;
     background-color:#01ACFD ;
     width: 1440px;
     margin: 0 auto;
-    display: flex;
     justify-content: space-evenly;
-    height: 300px;
+    color:white;
+    height: 400px;
+    align-items: center;
 }
 .education{
-    color: white;
+    width: 400px;
 }
 .education-heading{
     display: flex;
     align-items: center;
-    margin-top: 90px;
-    color: white;
+    /* border: 4px solid white; */
+    
 }
-.about,ul{
-    display: inline;
-    color: white;
-}
-.about>h3{
-    margin-bottom: 0px;
-    margin-top: 50px;
-    /* background-color: #3CD8E8; */
+.about-title{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 34px;
 }
-ul li{
-    margin-top: 10px;
+.about-ul{
+    display: inline;
+}
+.about-ul>li{
+    margin-bottom: 10px;
 }
 .logo{
     display: inline;
-    color: white;
-    margin-top: 90px;
+    
 }
-
 
 
 
@@ -471,6 +467,9 @@ ul li{
 /* responsive styles for mobile  */
 
 @media screen and (max-width: 576px){
+    body{
+        /* border: 2px solid aqua; */
+    }
     #name,.nav-ul,.nav-btn{
         display: none;
     }
@@ -552,6 +551,7 @@ ul li{
         max-width: 340px;
         max-height: 350px;
         margin: 20px auto;
+        /* border: 3px solid blue; */
         
     }
 
@@ -600,7 +600,7 @@ ul li{
     }
 
     .view-all{
-        max-width: 360px;
+        max-width: 340px;
         /* background-color: #05D4DF; */
     }
 
@@ -609,11 +609,15 @@ ul li{
     }
 
     footer{
-        width: 100%;
+        width: 330px;
         flex-direction: column;
         height: 100% ;
         padding-bottom: 30px;
         padding-left: 20px;
+        justify-items: center;
+    }
+    .education{
+        width: 250px;
     }
 }
 
