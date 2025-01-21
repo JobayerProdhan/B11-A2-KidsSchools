@@ -7,6 +7,8 @@
     font-style: normal;
   }
 
+
+
 /* Header section styles */
 header{
     max-width: 1160px;
@@ -117,6 +119,142 @@ ul{
     border: 1px solid black;
     transform: scale(1.05);
 }
+/* curriculum section styles  */
+
+.curriculum{
+    height: 870px;
+    max-width: 1440px;
+    background-image: url("../assets/bg.png");
+    margin-top: 100px;
+    margin: 0 auto;
+    /* border: 4px solid red; */
+    margin-top: 100px;
+}
+.curriculum-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    /* border: 3px solid slateblue; */
+
+}
+.curriculum-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+.kinder{
+    border: 1px solid #DEF5FF;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 33%, white 67%);
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 368px;
+    height: 370px;
+    padding: 20px;
+    padding-top: 80px;
+   
+}
+
+#kinder-read{
+    color:#64C8FF ;
+}
+.elementary{
+     border: 1px solid #FFF4DC;
+     border-radius: 20px;
+     background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 33%, white 67%);
+     justify-content: center;
+     text-align: center;
+     gap: 20px;
+     width: 368px;
+     height: 370px;
+     padding: 20px;
+     padding-top: 80px;
+     
+     
+}
+#elementary-read{
+    color:#F0AA00 ;
+}
+
+.middle{
+    border: 1px solid  #F2E8FF ;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgba(242, 232, 255, 1) 33%, white 67%);
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    width: 368px;
+    height: 370px;
+    padding: 20px;
+    padding-top: 80px;
+    
+
+}
+
+#middle-read{
+    color: #8700FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,5 +298,25 @@ ul{
 
     .banner-pic img{
         height: 430px;
+    }
+
+    .cards{
+       flex-direction: column;
+        
+    }
+    .card-title{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .cards p{
+        font-size:0.7rem ;
+    }
+    
+    .card-img{
+        height: 92px;
+        width: 92px;
+    }
+    .elementary,.middle,.kinder{
+        width: calc(100% - 40px);
     }
 }
