@@ -11,6 +11,7 @@
 header{
     max-width: 1160px;
     margin: 0 auto;
+    /* border: 1px solid steelblue; */
 }
 
 /* Navbar styles */
@@ -18,7 +19,7 @@ nav,.logo,ul{
     display: flex;
 }
 nav{
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 #name{
@@ -79,6 +80,45 @@ ul{
     display: none;
 }
 
+/* banner section styles */
+.banner{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.banner-txt-title{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.empowering{
+    color: orange;
+}
+
+.towards{
+    color: skyblue;
+}
+.banner-btn{
+    width: 197px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius:12px ;
+
+
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+.banner-btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+
 
 /* responsive styles for mobile  */
 
@@ -103,5 +143,22 @@ ul{
         
         border: none;
         border-top: 2px solid orange;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        height: 725px;
+    }
+    .banner-text{
+        text-align: center;
+    }
+
+    .banner-txt-title{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .banner-pic img{
+        height: 430px;
     }
 }
