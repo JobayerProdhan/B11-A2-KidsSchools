@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+/* Header section styles */
+header{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Navbar styles */
+nav,.logo,ul{
+    display: flex;
+}
+nav{
+    justify-content: space-evenly;
+    align-items: center;
+}
+#name{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.logo{
+    align-items: center;
+}
+.logo>img{
+    height: 62px;
+    width: 62px;
+}
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    gap: 30px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#home{
+    color: orange ;
+}
+#about{
+    color:skyblue;
+}
+
+#facilities{
+    color: #05D4DF;
+}
+#Admission{
+    color:#5D58EF ;
+}
+
+.nav-btn button{
+    background-color: orange;
+    color: white;
+    height: 50px;
+    width: 197px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 20px;
+
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+
+.nav-btn button:hover{
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    transform: scale(1.05);
+}
+
+
+.three-line,.hr-line{
+    display: none;
+}
+
+
+/* responsive styles for mobile  */
+
+@media screen and (max-width: 576px){
+    #name,.nav-ul,.nav-btn{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .three-line,.hr-line{
+        display: block;
+
+    }
+    .fa-bars{
+        font-size: 40px ;
+    }
+
+    .hr-line hr{
+        
+        border: none;
+        border-top: 2px solid orange;
+    }
+}
