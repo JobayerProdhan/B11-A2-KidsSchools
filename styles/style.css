@@ -29,7 +29,8 @@ nav{
     font-size: 2rem;
 }
 .logo{
-    align-items: center;
+    align-items: center; 
+    
 }
 .logo>img{
     height: 62px;
@@ -427,7 +428,7 @@ footer{
 .about-ul>li{
     margin-bottom: 10px;
 }
-.logo{
+.logo-footer{
     display: inline;
     
 }
@@ -467,9 +468,7 @@ footer{
 /* responsive styles for mobile  */
 
 @media screen and (max-width: 576px){
-    body{
-        /* border: 2px solid aqua; */
-    }
+   
     #name,.nav-ul,.nav-btn{
         display: none;
     }
@@ -550,7 +549,7 @@ footer{
     .stories-bg{
         max-width: 340px;
         max-height: 350px;
-        margin: 20px auto;
+        margin: 20px 0 auto;
         /* border: 3px solid blue; */
         
     }
@@ -609,12 +608,14 @@ footer{
     }
 
     footer{
-        width: 330px;
+        width: 320px;
         flex-direction: column;
         height: 100% ;
         padding-bottom: 30px;
         padding-left: 20px;
         justify-items: center;
+        margin: 0;
+        
     }
     .education{
         width: 250px;
