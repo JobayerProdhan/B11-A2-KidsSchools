@@ -82,6 +82,25 @@ ul{
     display: none;
 }
 
+/* Marque tag styles */
+.marquee-container {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #01ACFD;
+    padding: 10px 0;
+    border: none;
+    margin-top: 100px;
+}
+.marquee {
+    font-size: 20px;
+    font-weight: bold;
+    color: white; 
+   
+}
+.deadline{
+    color:red;
+}
+
 /* banner section styles */
 .banner{
     display: flex;
@@ -125,7 +144,7 @@ ul{
     /* height: 870px; */
     max-width: 1440px;
     background-image: url("../assets/bg.png");
-    margin-top: 100px;
+    margin-top: 300px;
     margin: 0 auto;
     /* border: 4px solid red; */
     margin-top: 100px;
@@ -244,11 +263,21 @@ ul{
     font-size: 30px;
 }
 /* stories section styles */
-
+.stories-heading{
+    
+    text-align: center;
+    /* background-color: #01ACFD; */
+    /* font-size: 1.7rem; */
+    margin-top: 100px;
+}
+.stories-heading>h1{
+    font-size: 5.2rem;
+}
 .stories-bg{
     background-image: url("../assets/bg.png");
     background: linear-gradient(to top, rgba(253, 162, 0, 0.3),white); 
     padding-bottom: 300px;
+   
     
 
 }
@@ -256,8 +285,8 @@ ul{
     width: 1440px;
     margin: 0 auto;
     
-    margin-top: 100px;
-    height: 600px;
+    margin-top: 200px;
+    height: 750px;
 }
 .story-container{
     display: flex;
@@ -265,6 +294,7 @@ ul{
     width: 1160px;
     margin: 0 auto;
     gap: 20px;
+    margin-top: 80px;
 }
 .small-story-container{
     display: grid;
@@ -507,6 +537,17 @@ footer{
     .banner-pic img{
         height: 430px;
     }
+    .marquee-container {
+        width: 310px;
+        margin: 0 auto;
+      
+        padding: 10px 0;
+        /* padding-top: 50px; */
+        border: none; 
+        box-shadow: none;
+        background-color: #01ACFD;
+        margin-top: 100px;
+    }
 
     .curriculum-title{
         font-size: 1.5rem;
@@ -548,10 +589,17 @@ footer{
 
     .stories-bg{
         max-width: 340px;
-        max-height: 350px;
+        max-height: 500px;
         margin: 20px 0 auto;
         /* border: 3px solid blue; */
         
+    }
+
+    .stories-heading>h1{
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 
     .small-1,.small-2,.small-3,.small-4{
@@ -632,11 +680,11 @@ footer{
     }
     .about{
         margin-left: 5px;
-        background-color: rgb(69, 39, 39);
+       
     }
     .about-ul{
         margin-top: 2px;
-        background-color: #3CD8E8;
+       
     }
     .about-ul>li{
         font-size: .8rem;
