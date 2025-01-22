@@ -46,16 +46,20 @@ ul{
 
 #home{
     color: orange ;
+    text-decoration: none;
 }
 #about{
     color:skyblue;
+    text-decoration: none;
 }
 
 #facilities{
     color: #05D4DF;
+    text-decoration: none;
 }
 #Admission{
     color:#5D58EF ;
+    text-decoration: none;
 }
 
 .nav-btn button{
@@ -185,12 +189,27 @@ ul{
     height: 370px;
     padding: 20px;
     padding-top: 80px;
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 
+    0px 6px 6px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
    
+}
+.kinder:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15), 
+                0px 8px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #kinder-read{
     color:#64C8FF ;
+    text-decoration: none;
 }
+#kinder-read:hover{
+    color: #075179;
+}
+
 .elementary{
      border: 1px solid #FFF4DC;
      border-radius: 20px;
@@ -203,10 +222,24 @@ ul{
      padding: 20px;
      padding-top: 80px;
      
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 
+     0px 6px 6px rgba(0, 0, 0, 0.05);
+
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
      
+}
+
+.elementary:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15), 
+                0px 8px 8px rgba(0, 0, 0, 0.1); 
 }
 #elementary-read{
     color:#F0AA00 ;
+    text-decoration: none;
+}
+#elementary-read:hover{
+    color:#a08138  ;
 }
 
 .middle{
@@ -220,13 +253,27 @@ ul{
     height: 370px;
     padding: 20px;
     padding-top: 80px;
-    
 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 
+    0px 6px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.middle:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15), 
+                0px 8px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #middle-read{
     color: #8700FF;
+    text-decoration: none;
 }
+
+#middle-read:hover{
+    color: #290847;
+}
+
 
 
 .arrows{
@@ -535,7 +582,7 @@ footer{
     }
 
     .banner-pic img{
-        height: 430px;
+        height: 400px;
     }
     .marquee-container {
         width: 310px;
