@@ -614,6 +614,7 @@ footer{
         padding-bottom: 30px;
         padding-left: 20px;
         justify-items: center;
+        align-items:start;
         margin: 0;
         
     }
@@ -626,8 +627,20 @@ footer{
     }
 
     .education-description{
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1rem;
+    }
+    .about{
+        margin-left: 5px;
+        background-color: rgb(69, 39, 39);
+    }
+    .about-ul{
+        margin-top: 2px;
+        background-color: #3CD8E8;
+    }
+    .about-ul>li{
+        font-size: .8rem;
+        font-weight: 400;
     }
     .about-title{
         font-weight: 700;
